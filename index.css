@@ -1,0 +1,15 @@
+.clickup{
+   border:solid 1px;
+   width: 100px;
+   height: 100px;
+   background-size: 100px,100px;
+   background-image: url('image/dfpic.png');
+}
+.remove{
+
+    border:solid 5px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    display: none;
+}
