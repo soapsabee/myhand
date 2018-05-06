@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="modal.css">
 </head>
 
 <body>
@@ -41,45 +42,54 @@
 <form action="upimage.php" method="post" enctype="multipart/form-data" id="uploadForm">
     
       <div class="row">
-        <div class="tagup ">
-        <div class="tagclick ">
+         <div class="tagclick">
           <div id="clickup1" class="clickup"></div>
-          <div id="remove1" class="remove"></div>
         </div>
-        <div class="tagclick ">
+        <div id="remove1" class="remove"></div>
+        <div class="tagclick">
           <div id="clickup2" class="clickup"></div>
-          <div id="remove2" class="remove"></div>
+         
         </div>
-        <div class="tagclick ">
+        <div id="remove2" class="remove"></div>
+        <div class="tagclick">
           <div id="clickup3" class="clickup"></div>
-          <div id="remove3" class="remove"></div>
         </div>
-        <div class="tagclick ">
+        <div id="remove3" class="remove"></div>
+        </div>
+        <div class="row">
+        <div class="tagclick">
           <div id="clickup4" class="clickup"></div>
-          <div id="remove4" class="remove"></div>
         </div>
+        <div id="remove4" class="remove"></div>
         <div class="tagclick">
           <div id="clickup5" class="clickup"></div>
-          <div id="remove5" class="remove"></div>
         </div>
+        <div id="remove5" class="remove"></div>
         <div class="tagclick">
           <div id="clickup6" class="clickup"></div>
-          <div id="remove6" class="remove"></div>
         </div>
+        <div id="remove6" class="remove"></div>
+      </div>
+
+
+      <div class="row">
         <div class="tagclick">
           <div id="clickup7" class="clickup"></div>
-          <div id="remove7" class="remove"></div>
+         
         </div>
+        <div id="remove7" class="remove"></div>
         <div class="tagclick">
           <div id="clickup8" class="clickup"></div>
-          <div id="remove8" class="remove"></div>
+          
         </div>
+        <div id="remove8" class="remove"></div>
         <div class="tagclick">
           <div id="clickup9" class="clickup"></div>
-          <div id="remove9" class="remove"></div>
+          
         </div>
+        <div id="remove9" class="remove"></div>
       </div>
-     </div>
+    
    
     <div id="choosefile">
 
@@ -105,10 +115,9 @@
 
     <div class="form-group">
       <label for="">ระบุพื้นที่ของสินค้า</label>
-      <select class="form-control col-3" name="" id="">
-        <option></option>
-        <option></option>
-        <option></option>
+      <select class="form-control col-3" name="" id=""data-toggle="modal" data-target="#myModal" >
+        <option id="option"></option>
+       
       </select>
     </div>
 
@@ -122,8 +131,9 @@
 </div>
   </form>
  
-
-
+  <?php include("locatemodal_page.php");
+        include("locatemodal_page2.php");
+  ?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script
@@ -134,6 +144,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="jquery.js"></script>
 </body>
 

@@ -160,6 +160,48 @@ $(function(){
         $('#clickup9').css("background-image",'url(image/dfpic.png)');
         $('#remove9').hide();
     });
+
+    $('#remove9').click(function(){
+        $('#picfile9').val("");
+        $('#clickup9').css("background-image",'url(image/dfpic.png)');
+        $('#remove9').hide();
+    });
+
+    $()
+
+    $('.test').click(function(){
+        
+        var province = $(this).data("province");
+         
+       
+      $.ajax({
+        type: 'POST',
+        data: {province:province},
+        url: 'index.php',
+        success:function(data){
+           
+            if(data=="notok"){
+                alert("WRONG");
+            }
+            else if(data=="OK"){
+                alert("PASS");
+            }
+          
+        }
+           
+        
+    
+    });
+    
+    });
+
+    $('#clsmodal2').click(function(){
+        $('#myModal2').modal('hide');
+       
+    });
+   
+
+    
   
 
 });
