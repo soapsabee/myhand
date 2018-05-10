@@ -10,21 +10,26 @@ $(function(){
             
             $.ajax({
 
-                url:'model/checklogin.php',
+                url:'modal/checklogin.php',
                 method:'POST',
                 data:{username:username, password:password},
                 success:function(data){
                     if(data == 'NO'){
                         alert("Wrong Data");
                     }
-                    else{
+                    else if(data == "you can login"){
                         alert("Right Data");
-                        window.location.href = "views/index_user.php";
+                        window.location.href = "views/index2.php";
+                    }
+                    else{
+                        alert("Welcome Admin");
+                        window.location.href = "views/report_product.php";
+                    }
                     }
                 }
+            
 
-
-            })
+            )
 
         }
 

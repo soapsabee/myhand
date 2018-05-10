@@ -1,0 +1,93 @@
+.select{
+    display: inline-block;
+    border: solid 3px white;
+    width: 50px;
+    height: 300px;
+    transition: 0.3s;
+    
+}
+
+.select:hover{
+    border: 5px black;
+    
+}
+
+.type{
+  
+    
+    width: 30px;
+    height: 150px;
+    margin: 10px;
+    background-color: powderblue;
+    text-align: center;
+    transition: 0.3s;
+    
+    
+}
+
+.type:hover{
+    border: solid 4px darkorange ;
+}
+
+.space{
+    border: solid 3px white;
+    
+    height: 40px;
+}
+
+.select{
+    padding-top:70px;
+    text-align: center;
+    
+    
+}
+
+#buy{
+    background-color: sandybrown;
+}
+#sell{
+    background-color: palegoldenrod;
+}
+
+.picbuy{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.pictype{
+    
+    width:100px;
+    height: 120px;
+}
+
+.photo1{
+    width: 350px;
+    height: 350px;
+    border:solid;
+    border-width:15px; 
+    border-color: rgb(243, 214, 239);
+    background-color: rgb(255, 91, 241);
+}
+.photo2{
+    width: 350px;
+    height: 350px;
+    border:solid;
+    border-width:15px; 
+    border-color: rgb(215, 245, 217);
+    background-color: rgb(122, 255, 95);
+}
+.pic2{
+    width: 40px;
+    height: 40px;
+    border:solid;
+}
+
+.navbar{
+    background-color: mediumslateblue;
+    background-size: 100%;
+}
+.nav-link{
+    font-size: 11px;
+}

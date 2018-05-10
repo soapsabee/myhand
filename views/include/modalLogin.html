@@ -1,0 +1,35 @@
+<html>
+<div class="modal fade" id="myModal" aria-hidden="true">
+  <div class="modal-dialog" style="z-index:1040">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+          (ใส่ Username = ADMIN,Password = admin เพื่อเข้าสู่หน้า admin)
+        <h4 class="modal-title">Login</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Username&nbsp;:
+        <input type="text" name="username" id="username">
+        <br>
+        <br> Password&nbsp;&nbsp;:
+        <input type="password" name="password" id="password">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" onClick="window.location ='views/register_page.php'">Register</button>
+        <button id="login" type="submit" class="btn btn-success">Login</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</html>

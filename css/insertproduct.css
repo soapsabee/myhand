@@ -1,0 +1,21 @@
+body{
+    background-image: url("../views/images/background.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.clickup{
+   border:solid 1px;
+   width: 100px;
+   height: 100px;
+   background-size: 100px 100px;
+   background-image: url('../product_img/default.jpg');
+   background-repeat: no-repeat;
+}
+.remove{
+
+    border:solid 5px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    display: none;
+}
